@@ -15,6 +15,23 @@
 
 });
 
+pdfApp.directive('yesNoListDisplay', ["selectlistService", function () {
+    return {
+        restrict: 'E',
+        scope: {
+            nameid: '@',
+            prefix: '@',
+            yesnoList: '=yesnolist'
+        },
+        templateUrl: 'app/directives/templates/yesnolistdisplay.html',
+        replace: true,
+        transclude: false,
+        link: function (scope, elements, attrs, controllers) { 
+            var i = 0;
+        }
+    }
+}]);
+
 pdfApp.directive('phoneNumberDisplay', function () {
     return {
         restrict: 'E',

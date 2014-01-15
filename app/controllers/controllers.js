@@ -17,6 +17,7 @@ controllers.pdfController = function ($scope, $http, $location, pdfApp, selectli
 
         $(".tips").tooltip();
 
+        // $scope.yesnolistfunc = selectlistService.getYesNoList;
         $scope.yesnoList = selectlistService.getYesNoList();
         $scope.barcodeList = selectlistService.getBarcodeListList();
         $scope.pdfinfolist = selectlistService.getPdfCreateUrlList();

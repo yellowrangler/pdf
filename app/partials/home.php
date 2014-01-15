@@ -46,21 +46,21 @@
               <tr>
                 <td>File Name to create</td>
                 <td>&nbsp;</td>
-                <td><input style="" type="text" id="{{prefix}}-filecreate" name="filecreate"></td>
+                <td><input style="" type="text" id="{{pdfinfo.prefix}}-filecreate" name="filecreate"></td>
               </tr>
             </table>  
             </div>
             <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
             Do you want created file opened in seperate window?
-            <select name="popupwindow" id="{{pdfinfo.prefix}}-popupwindow">
-              <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
-            </select> 
+            <yes-no-list-display 
+                nameid="popupwindow" prefix="{{pdfinfo.prefix}}" yesnolist="yesnoList">
+            </yes-no-list-display> 
             </div>
             <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
             Do you want link to created file displayed?
-            <select name="popuplink" id="{{pdfinfo.prefix}}-popuplink">
-              <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
-            </select> 
+            <yes-no-list-display 
+                nameid="popuplink" prefix="{{pdfinfo.prefix}}" yesnolist="yesnoList">
+            </yes-no-list-display> 
             </div>
             <input style="" type="hidden" id="{{pdfinfo.prefix}}-filename-hidden" name="filename" value="">
             </form>
@@ -108,21 +108,21 @@
               <tr>
                 <td>File Name to create</td>
                 <td>&nbsp;</td>
-                <td><input style="" type="text" id="{{prefix}}-filecreate" name="filecreate"></td>
+                <td><input style="" type="text" id="{{barcodeinfo.prefix}}-filecreate" name="filecreate"></td>
               </tr>
             </table>  
             </div>
             <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
             Do you want created file opened in seperate window?
-            <select name="popupwindow" id="{{barcodeinfo.prefix}}-popupwindow">
-              <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
-            </select> 
+            <yes-no-list-display 
+                nameid="popupwindow" prefix="{{barcodeinfo.prefix}}" yesnolist="yesnoList">
+            </yes-no-list-display>  
             </div>
             <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
             Do you want link to created file displayed?
-            <select name="popuplink" id="{{barcodeinfo.prefix}}-popuplink">
-              <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
-            </select> 
+            <yes-no-list-display 
+                nameid="popuplink" prefix="{{barcodeinfo.prefix}}" yesnolist="yesnoList">
+            </yes-no-list-display>  
             </div>
             <input style="" type="hidden" id="{{barcodeinfo.prefix}}-template-hidden" name="template" value="">
             </form>
