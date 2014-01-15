@@ -1,0 +1,17 @@
+2013-11-21 14:39:38 : DB error: Access denied for user 'haadmin'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 14:47:30 : DB error: Access denied for user 'haadmin'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:02:46 : DB error: Access denied for user 'haadmin'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:05:16 : DB error: Access denied for user 'haadmin'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:06:18 : DB error: Access denied for user 'root'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:10:46 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:13:55 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:14:07 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:14:41 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:16:28 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:17:54 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:19:24 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:21:08 : DB error: Access denied for user 'root'@'turksandcaicos.westell.com' (using password: YES) - Error mysql connect
+2013-11-21 15:22:39 : DB error: Unknown MySQL server host '%' (74) - Error mysql connect
+2013-11-21 15:23:27 : DB error: Access denied for user 'root'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:25:11 : DB error: Access denied for user 'root'@'localhost' (using password: YES) - Error mysql connect
+2013-11-21 15:38:32 : DB error: Access denied for user 'root'@'localhost' (using password: YES) - Error mysql connect

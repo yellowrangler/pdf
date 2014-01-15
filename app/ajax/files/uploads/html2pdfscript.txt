@@ -1,0 +1,83 @@
+
+<style type="text/css">
+.tableborders  {
+	border: 1px solid grey;
+	padding:12px;
+}
+
+</style>
+
+<page>
+
+<page_header> 
+<h1 style="text-align:center;">Health Allianze Patient Information Request Form</h1>           
+</page_header> 
+
+<div id="container" style="margin:25px;">
+
+<div style="padding-top:75px;">
+<h2>Patient Information</h2>
+</div>
+
+<table class="tableborders" width="100%">
+	<tr>
+		<td width="50%">
+		<table width="100%">
+			<tr><td align="right">Patient Name:</td><td>Tarry Cutler</td></tr>
+			<tr><td align="right">Patient DOB:</td><td>10/27/1958</td></tr>
+			<tr><td align="right">Patient ID:</td><td>0-0001</td></tr>
+		</table>
+		</td>
+		<td >&nbsp;</td>
+		<td width="50%">
+			<table width="100%">
+			<tr><td align="right">Requested Date:</td><td>01/13/2014</td></tr>
+			<tr><td align="right">Treatment Date:</td><td>12/25/2013</td></tr>
+			<tr><td align="right"></td><td></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<div style="padding-top:5px;">
+<h2>Patient Request</h2>
+</div>
+
+<div class="tableborders" style="padding-top:5px;">
+There was an accident on december 25th where one of you physician's, a doctor bob smith performed a blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay blah blah blay. Would you please send xrays and blood tests as well as dr bob smiths notes to Helth Allianze whose address is documented bellow. Thank you.
+</div>
+
+<div style="padding-top:5px;">
+<h2>Requested Forms</h2>
+</div>
+
+<div class="tableborders"  style="padding-top:5px;">
+<input type="checkbox" name="blooddtest" value=""><span style="margin-left:10px;" >Blood Tests</span><br/>
+<input type="checkbox" name="xrays" ><span style="margin-left:10px;" >X-Rays</span><br/>
+<input type="checkbox" name="notes" ><span style="margin-left:10px;" >Phycians notes</span><br/>
+</div>
+
+<div style="padding-top:80px;">
+<table width="100%">
+	<tr>
+		<td style="font-weight:900;" width="50%">Please send filled out form to:
+		</td>
+		<td style="width:5px;">&nbsp;</td>
+		<td width="50%">
+			<table style="font-weight:600;" width="100%">
+			<tr><td>Health Allianze</td></tr>
+			<tr><td>5 Hospital Rd</td></tr>
+			<tr><td>Andover, MA 01987</td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</div>
+
+</div>
+
+<page_footer> 
+Health Allianze LLC
+</page_footer> 
+
+</page>

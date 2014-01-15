@@ -1,0 +1,9 @@
+<div name="displayarea" >
+<i id="patienticon" class="listHeaderIcon glyphicon glyphicon-circle-arrow-right"></i><span class="listHeader">Select Patient</span>
+<input style="width:50%;" ng-model="patientname" class="entryInput" id="patientname" name="patientname" type="text" placeholder="Patient name" >
+<div  style="padding:15px;" >
+<ul style="list-style-type:none;" ng-model="patientlist" ng-repeat="patient in patientlist">
+<li class="selectListLine" data-ng-click="select(patient.patientid)">{{patient.name}} {{patient.address1}} {{patient.city}} {{patient.state}} {{patient.zip}} <span style="margin-left:35px;color:green;">{{patient.patientid}}</span></li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+ 
+<div class="row">
+<div class="col-lg-12">
+
+<div name="loadtitlearea">
+<span class="loadTitle">Create PDF using FPDF Library</span>
+</div><!-- end of loadtitlearea -->
+
+</div><!-- end of col-lg-12 -->
+</div><!-- end of row -->
+
+<div class="row" style="padding-top:20px;">
+<div class="col-lg-12">
+
+<div class="panel">
+<span style="color:blue;font-size:13px;">The PDF created will be put into the files directory under apps. <br /><For file name just give name no file extention. We will apend .pdf.</span>
+<div style="padding-top:15px;color:red;font-size:12px;" name="formdatafilename">
+FileName:
+<input id="filename" name="filename" value="">
+</div>
+
+<div style="padding-top:15px;color:red;font-size:12px;" name="formdatafilename">
+Do you want pdf popped up:
+<select name="popup" id="popup">
+	<option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
+</select> 
+</div>
+
+</div><!-- end of panel -->
+
+</div><!-- end of col-lg-12 -->
+</div><!-- end of row -->
+
+</div><!-- end of container -->

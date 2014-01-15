@@ -1,0 +1,54 @@
+<div id="createpdfhtml2pdf-area" style="display:none;" class="container">
+    <div class="row">
+      <div class="col-lg-12">
+      <div name="loadtitlearea">
+      <span class="loadTitle">{{title}}</span>
+      </div><!-- end of loadtitlearea -->
+      </div><!-- end of col-lg-12 -->
+  </div><!-- end of row -->
+
+  <div class="row" style="padding-top:20px;">
+    <div class="col-lg-12">
+    <div class="panel">
+      <form name="{{prefix}}-form" id="{{prefix}}-form" enctype="multipart/form-data">
+      <div style="color:green;font-size:12px;" name="formdatafromfilename">
+      <table>
+        <tr>
+          <td>File Name to convert</td>
+          <td>&nbsp;</td>
+          <td><input style="" type="file" id="{{prefix}}-filename" name="filename"></td>
+        </tr>
+      </table>  
+      </div>
+      <div style="padding-top:15px;color:green;font-size:12px;" name="formdatatofilename">
+      <table>
+        <tr>
+          <td>PDF File Name</td>
+          <td>&nbsp;</td>
+          <td><input style="" type="text" id="{{prefix}}-pdfname" name="pdfname"></td>
+        </tr>
+      </table>  
+      </div>
+      <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
+      Do you want pdf popped up:
+      <select name="popupwindow" id="{{prefix}}-popupwindow">
+        <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
+      </select> 
+      </div>
+      <div style="padding-top:15px;color:green;font-size:12px;" name="formdatafilename">
+      Do you want link to pdf:
+      <select name="popuplink" id="{{prefix}}-popuplink">
+        <option ng-repeat="yesno in yesnoList" value="{{yesno.value}}">{{yesno.item}}</option>
+      </select> 
+      </div>
+      <input style="" type="hidden" id="{{prefix}}-filename-hidden" name="filename" value="">
+      </form>
+      <div id="showlink" style="display:none;padding-top:15px;color:green;font-size:12px;">
+      </div>
+    </div><!-- end of panel -->
+    <div id="{{prefix}}-process" style="float:right;padding-top:30px;padding-right:15px;">
+    <button ng-click="pdfAction('{{prefix}}')" type="button" class="btn btn-primary btn-xs">Convert</button>
+    </div><!-- end of createpdfhtml2pdf-process -->
+    </div><!-- end of col-lg-12 -->
+  </div><!-- end of row -->
+</div><!-- end of container -->
