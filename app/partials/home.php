@@ -95,9 +95,9 @@
             <form name="{{barcodeinfo.prefix}}-form" id="{{barcodeinfo.prefix}}-form">
             <div style="color:green;font-size:12px;" name="formdatafromfilename">
             Barcode to Create &nbsp;
-            <select name="barcodeselect" id="{{barcodeinfo.prefix}}-barcode-select">
-              <option ng-repeat="barcode in barcodeList" value="{{barcode.value}}">{{barcode.item}}</option>
-            </select> 
+            <barcode-list-display 
+                nameid="barcodeselect" prefix="{{barcodeinfo.prefix}}" barcodelist="barcodeList">
+            </barcode-list-display>  
             </div>
             <div style="padding-top:15px;color:green;font-size:12px;" name="barcodevalue">
             Barcode value &nbsp;

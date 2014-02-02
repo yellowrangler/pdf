@@ -15,7 +15,24 @@
 
 });
 
-pdfApp.directive('yesNoListDisplay', ["selectlistService", function () {
+pdfApp.directive('barcodeListDisplay', function () {
+    return {
+        restrict: 'E',
+        scope: {
+            nameid: '@',
+            prefix: '@',
+            barcodeList: '=barcodelist'
+        },
+        templateUrl: 'app/directives/templates/barcodelistdisplay.html',
+        replace: true,
+        transclude: false,
+        link: function (scope, elements, attrs, controllers) { 
+            var i = 0;
+        }
+    }
+});
+
+pdfApp.directive('yesNoListDisplay', function () {
     return {
         restrict: 'E',
         scope: {
@@ -30,7 +47,7 @@ pdfApp.directive('yesNoListDisplay', ["selectlistService", function () {
             var i = 0;
         }
     }
-}]);
+});
 
 pdfApp.directive('phoneNumberDisplay', function () {
     return {

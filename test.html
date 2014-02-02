@@ -1,0 +1,124 @@
+
+<html>
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$( document ).ready(function() {
+});
+
+var stackObj = function () {
+	
+}
+
+stackObj.prototype = {
+
+	init: function () {
+		this.stackArray = new Array(); 
+	},
+
+	stackLength: function () {
+		return this.stackArray.length ;
+	},
+
+	peekNext: function () {
+		return this.stackArray.slice(0,1).toString();
+	},
+
+	pushItem: function (item) {
+		this.stackArray.unshift(item);
+	},
+
+	popItem: function () {
+		var item = "";
+
+		if (this.stackArray.length > 0)
+		{
+			item = this.stackArray.slice(0,1);
+			this.stackArray.shift();
+		}
+		
+		return item.toString();
+	}
+}
+
+var queueObj = function () {
+	
+}
+
+queueObj.prototype = {
+
+	init: function () {
+		this.queueArray = new Array();
+	},
+
+	queueLength: function () {
+		return this.queueArray.length ;
+	},
+
+	peekNext: function () {
+		return this.queueArray.slice(-1).toString();
+	},
+
+	enqueueItem: function (item) {
+		this.queueArray.unshift(item);
+	},
+
+	dequeueItem: function () {
+		var item = "";
+
+		if (this.queueArray.length > 0)
+		{
+			item = this.queueArray.pop();
+		}
+		
+		return item.toString();
+	}
+}
+
+// stackObj.prototype.peekItem = function () {
+// 	return this.stackArray.slice(0,1).toString();
+// }  works
+
+// stackObj.peekItem = function () {
+// 	return this.stackArray.slice(0,1).toString();
+// }  does not work
+
+var stack = new stackObj();
+var queue = new queueObj();
+
+// stack.peekItem = function () {
+// 	return this.stackArray.slice(0,1).toString();
+// }  does not work
+
+stack.init();
+
+stack.pushItem("apple");
+stack.pushItem("orange");
+stack.pushItem("pear");
+stack.pushItem("avacado");
+
+var str = "";
+
+str = stack.popItem();
+str = stack.popItem();
+str = stack.popItem();
+
+queue.init();
+
+queue.enqueueItem("car");
+queue.enqueueItem("truck");
+queue.enqueueItem("train");
+queue.enqueueItem("plane");
+
+str = queue.dequeueItem();
+
+</script>
+<br />
+
+Add to stack, queue
+
+
+</body>
+</html>
