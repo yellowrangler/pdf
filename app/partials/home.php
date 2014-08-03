@@ -1,12 +1,12 @@
 <div class="row" style="padding-top:5px;">
 <div class="col-md-12">
-<div class="section-article">
+<!-- <div class="section-article">
 <h3 class="bodyFont">PDF Utilities Home Page</h3>
-</div> <!-- end of section-article -->
+</div> <!-- end of section-article --> 
 </div> <!-- end of col-md-12 -->
 </div> <!-- end of row -->
 
-<div class="row" style="padding-top:30px;font-weight:500;" >
+<div class="row" style="padding-top:10px;font-weight:500;" >
   <div class="col-md-12">
   <div id="carousel-pdf" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
