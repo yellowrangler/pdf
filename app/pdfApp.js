@@ -6,8 +6,13 @@ pdfApp.config(function ($routeProvider) {
     $routeProvider
         .when('/home',
             {
-                controller: 'pdfController',
+                controller: 'homeController',
                 templateUrl: 'app/partials/home.php'
+            })  
+        .when('/buildpdfs',
+            {
+                controller: 'buildpdfsController',
+                templateUrl: 'app/partials/buildpdfs.php'
             })  
         .when('/other',
             {

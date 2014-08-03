@@ -1,6 +1,6 @@
-﻿pdfApp.service('adminfunctionService', function () {
+﻿pdfApp.service('createpdffunctionservice', function () {
     this.getFunctions = function () {
-        return adminfunctions;
+        return createpdffunctions;
     }
 
     this.getActionLocation = function (action) {
@@ -80,62 +80,41 @@
     }
 
     this.isLogoff = function (action) {
-        logoffIdx = adminfunctions.length - 1;
+        logoffIdx = createpdffunctions.length - 1;
         if (action == logoffIdx)
             return true;
         else
             return false;
     }
 
-    var adminfunctions = [
+    var createpdffunctions = [
         {
             title: "Create PDF with FPDF",
             action: "createfpdfpdf",
             help: "This will create pdf file usinf FPDF library",
             id: "createfpdfpdf",
-            boostrapbutton:"btn-default"
+            boostrapbutton:"btn-info"
         },
         {
             title: "Create PDF with HTML2PDF",
             action: "createpdfhtml2pdf",
             help: "This will create pdf file usinf HTML2PDF library",
             id: "createpdfhtml2pdf",
-            boostrapbutton:"btn-default"
+            boostrapbutton:"btn-info"
         },
         {
             title: "Convert PDF to TIFF",
             action: "convertpdf2tiff",
             help: "This will convert PDF pdf file to tiff",
             id: "convertpdf2tiff",
-            boostrapbutton:"btn-default"
-        },
-        {
-            title: "Create FPDF PDF Barcodes",
-            action: "createfpdfbarcodes",
-            help: "This will create barcodes using FPDF pdf generator",
-            id: "createfpdfbarcodes",
-            boostrapbutton:"btn-default"
+            boostrapbutton:"btn-info"
         },
         {
             title: "Create HTML2PDF PDF Barcodes",
             action: "createhtml2pdfbarcodes",
             help: "This will create barcodes using HTML2PDF pdf generator",
             id: "createhtml2pdfbarcodes",
-            boostrapbutton:"btn-default"
-        },
-        {
-            title: "Send TIFF as fax",
-            action: "faxtiff",
-            help: "This will Fax A TIFF file",
-            id: "faxtiff",
-            boostrapbutton:"btn-default"
-        },
-        {
-            title: "Fax PDF (The Whole Enchilada)",
-            action: "faxpdf",
-            help: "This will Convert a PDF to TIFF and then Fax it",
-            id: "faxpdf",
-            boostrapbutton:"btn-default"
+            boostrapbutton:"btn-info"
         }
     ];
 

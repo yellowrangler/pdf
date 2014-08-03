@@ -61,3 +61,8 @@
     font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;
 
 }
+
+/*drop down boostrap menus */
+.dropdown :hover {
+    cursor: pointer;
+}

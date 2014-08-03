@@ -1,6 +1,6 @@
 // define controllers for app
 var controllers = {};
-controllers.pdfParentController = function ($scope, $http, $location, pdfApp, adminfunctionService) {
+controllers.pdfParentController = function ($scope, $http, $location, pdfApp, createpdffunctionservice) {
 
     init();
     function init() {
@@ -9,11 +9,19 @@ controllers.pdfParentController = function ($scope, $http, $location, pdfApp, ad
 }
 
 
-controllers.pdfController = function ($scope, $http, $location, pdfApp, selectlistService, adminfunctionService) {
+controllers.homeController = function ($scope, $http, $location, pdfApp, createpdffunctionservice) {
 
     init();
     function init() {
-        $scope.sysfuncs = adminfunctionService.getAllFunctions();
+        $scope.loadHTML = "";
+    };
+}
+
+controllers.buildpdfsController = function ($scope, $http, $location, pdfApp, selectlistService, createpdffunctionservice) {
+
+    init();
+    function init() {
+        $scope.sysfuncs = createpdffunctionservice.getAllFunctions();
 
         $(".tips").tooltip();
 
@@ -29,13 +37,13 @@ controllers.pdfController = function ($scope, $http, $location, pdfApp, selectli
         $.each($scope.sysfuncs, function() {
             if (this.action == elm.action)
             {
-                $("#"+this.id).removeClass('btn-default');
+                $("#"+this.id).removeClass('btn-info');
                 $("#"+this.id).addClass('btn-primary');
             }
             else
             {
                 $("#"+this.id).removeClass('btn-primary');
-                $("#"+this.id).addClass('btn-default');
+                $("#"+this.id).addClass('btn-info');
                 $("#"+this.id+"-area").hide( );
             }
         });
